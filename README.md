@@ -14,7 +14,7 @@ If you use a different resolution - just retake the image with 'PrintScreen', th
 
 [Download Button Click Here](https://github.com/etofok/Dota-2-Queue-and-Go/releases/tag/v1)
 
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'K3K1DI5PY');kofiwidget2.draw();</script> 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K1DI5PY)
 
 ## Quick Summary
 
@@ -93,4 +93,4 @@ It was fun to make it.
 
 etofok
 
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'K3K1DI5PY');kofiwidget2.draw();</script> 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K1DI5PY)
