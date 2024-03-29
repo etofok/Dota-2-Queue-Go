@@ -2,6 +2,17 @@
 
 <img src="/icon.ico" width="150" alt="qng_icon">
 
+
+# (!) IMPORTANT AND REQUIRED:
+
+(!) Requires AutoHotkey v1.1 (not v2.0). 
+Download here: https://www.autohotkey.com/
+
+(!) MAKE SURE your 'ShareToChat.jpg' image IS THE SAME IMAGE as in your in-game lobby!
+
+If you use a different resolution - just retake the image with 'PrintScreen', then crop it in 'Paint'.
+
+
 ## Quick Summary
 
 Once upon a time there was a Dota 2 player who enjoyed the game. He really wanted to play multiple games in row, but he had a problem.
@@ -43,12 +54,6 @@ AND in every screen resolution.
 - [x] a tray icon (.ico) ---> icon.ico,
 - [x] reference Image (.jpg) ---> ShareToChat.jpg for the 1920x1080 resolution
 
-# (!) IMPORTANT:
-
-(!) MAKE SURE your 'ShareToChat.jpg' image IS THE SAME IMAGE as in your in-game lobby!
-
-If you use a different resolution - just retake the image with 'PrintScreen', then crop it in 'Paint' and it will work for your configuration.
-
 
 # How to Use
 
@@ -81,8 +86,6 @@ a) If the ShareToChat.jpg image IS NOT detected again, everyone has successfully
 b) If the ShareToChat.jpg image IS detected again, someone failed to connect, indicating a return to the main lobby screen and queuing for another game, prompting the script to minimize the Dota 2 window and wait for another game pop-up.
 
 
-It's a hilarious solution, so it was fun to make it.
+It was fun to make it.
 
 etofok
-
-
