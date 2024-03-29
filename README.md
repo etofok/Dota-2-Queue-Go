@@ -8,10 +8,13 @@
 (!) Requires AutoHotkey v1.1 (not v2.0). 
 Download here: https://www.autohotkey.com/
 
-(!) MAKE SURE your 'ShareToChat.jpg' image IS THE SAME IMAGE as in your in-game lobby!
+(!) MAKE SURE your 'ShareToChat.png' image IS THE SAME IMAGE as in your in-game lobby!
 
 If you use a different resolution - just retake the image with 'PrintScreen', then crop it in 'Paint'.
 
+[Download Button Click Here](https://github.com/etofok/Dota-2-Queue-and-Go/releases/tag/v1)
+
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'K3K1DI5PY');kofiwidget2.draw();</script> 
 
 ## Quick Summary
 
@@ -52,7 +55,7 @@ AND in every screen resolution.
 
 - [x] an AutoHotkey file (.ahk) ---> Dota 2 Queue-n-Go.ahk, 
 - [x] a tray icon (.ico) ---> icon.ico,
-- [x] reference Image (.jpg) ---> ShareToChat.jpg for the 1920x1080 resolution
+- [x] reference Image (.png) ---> ShareToChat.png for the 1920x1080 resolution
 
 
 # How to Use
@@ -62,7 +65,7 @@ AND in every screen resolution.
 - Enable "Bring Dota to foreground on match found" in Options -> Advanced.
 - Enable "Bring Dota to foreground for ready checks" in Options -> Advanced.
 - Enable "Bring Dota to foreground for pick phase and game start" in Options -> Advanced.
-- (!) MAKE SURE your 'ShareToChat.jpg' image IS THE SAME IMAGE as in your in-game lobby!
+- (!) MAKE SURE your 'ShareToChat.png' image IS THE SAME IMAGE as in your in-game lobby!
 - Press [ALT + N] to activate the script.
 You can change the hotkey using any text editor like Notepad.
 
@@ -73,7 +76,7 @@ You can change the hotkey using any text editor like Notepad.
 
 <img src="/resources/qng_logic.png" width="850" alt="qng_logic">
 
-* The script locates the Play Dota button, which is consistently positioned approximately 5% from the right edge of the window and at a similar height to the ShareToChat.jpg image.
+* The script locates the Play Dota button, which is consistently positioned approximately 5% from the right edge of the window and at a similar height to the ShareToChat.png image.
 * The script queues for the game and minimizes the Dota 2 window.
 * When the game is ready Dota 2 will be brought to the front as specified in the options
 * The script then presses Enter once, assuming there's a button to be pressed since the Dota 2 window becomes active.
@@ -81,11 +84,13 @@ You can change the hotkey using any text editor like Notepad.
 * After a short delay, Dota 2 will be brought forward again under the following conditions:
 a) A new 'Game is Ready' pop-up appears due to someone failing to accept the game previously.
 b) Everyone has successfully accepted the game and is loading into the pick phase.
-* Last but not least, the script scans for the ShareToChat.jpg image every second for the next 30 seconds.
-a) If the ShareToChat.jpg image IS NOT detected again, everyone has successfully connected.
-b) If the ShareToChat.jpg image IS detected again, someone failed to connect, indicating a return to the main lobby screen and queuing for another game, prompting the script to minimize the Dota 2 window and wait for another game pop-up.
+* Last but not least, the script scans for the ShareToChat.png image every second for the next 30 seconds.
+a) If the ShareToChat.png image IS NOT detected again, everyone has successfully connected.
+b) If the ShareToChat.png image IS detected again, someone failed to connect, indicating a return to the main lobby screen and queuing for another game, prompting the script to minimize the Dota 2 window and wait for another game pop-up.
 
 
 It was fun to make it.
 
 etofok
+
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'K3K1DI5PY');kofiwidget2.draw();</script> 
