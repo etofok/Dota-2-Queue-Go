@@ -1,8 +1,4 @@
 ;-----------------------------------------
-;	ETOFOK UX DESIGN
-;-----------------------------------------
-
-;-----------------------------------------
 ; ----- H O T K E Y S -----
 ;-----------------------------------------
 
@@ -31,7 +27,7 @@ SetTitleMatchMode, 3
 if not A_IsAdmin
 	Run *RunAs "%A_ScriptFullPath%"
 
-currentVersion 						:= 	"Dota 2 Queue-and-Go v290323"
+currentVersion 						:= 	"Dota 2 Queue-and-Go v1.0.0"
 Global i_ShareToChat 				:= 	"ShareToChat.png"
 icon_Main 							= 	icon.ico
 
@@ -100,6 +96,11 @@ Gui, GUI_DotaQueueAndGo:Add, Text, w%gui_Width% h%gui_Height% vAlert1
 WinSet, TransColor, %color% 220, % GUI_DotaQueueAndGo 	; PNG transparency. 0 = fully transparent
 WinSet, ExStyle, +0x20, % GUI_DotaQueueAndGo			; Click-through
 
+
+displaySplash := "Dota 2 Queue-and-Go by etofok`n`nStart Hotkey: " . Tooltip_Hotkey_QueueAndGo . "`n`nReload Hotkey: " . Tooltip_Hotkey_ScriptReload
+SplashTextOn, 250, 120, , %displaySplash%
+Sleep, 3000
+SplashTextOff
 
 Return 
 

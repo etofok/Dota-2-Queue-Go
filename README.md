@@ -1,6 +1,6 @@
 # Dota 2 Queue-And-Go
 
-<img src="/icon.ico" width="850" alt="qng_icon">
+<img src="/icon.ico" width="150" alt="qng_icon">
 
 ## Quick Summary
 
@@ -8,58 +8,63 @@ Once upon a time there was a Dota 2 player who enjoyed the game. He really wante
 
 He ALSO wanted a fresh cup of coffee (and a bio break).
 
-But waiting for the queue to pop, only for someone not to accept the 'Match Found'... is annoying.
+But waiting several minutes for the queue to pop, only for someone not to accept the 'Your Game is Ready'... is annoying.
 
-Doing this all over again only to get back into the queue because a 'Player has not connected"...
+Doing this all over again only to get back into the queue because of the players "has not connected"...
 
-Yeah. 
+Yeah.
 
 He really wanted his coffee.
 
-**Dota 2 Queue-And-Go** helps players to get to the draft screen successfully and automatically, without macro spamming the client with {Enter}.
 
-**Queue-And-Go** automatically accepts '*Ready check*' pop-ups, '*Game is Ready*' pop-ups and *deactivates itself* after making sure everyone has connected.
+**Dota 2 Queue-And-Go** helps players to successully queue and end up at the pick phase successfully, without macro spamming the client.
+
+**Queue-And-Go** automatically accepts '*Ready check*' pop-ups, '*Game is Ready*' pop-ups and *deactivates itself* after everyone has connected.
+
+It understands where your "Play Dota" button is, and it understands when to deactivate itself, so the ONLY user input is to launch.
 
 
 The best thing: 
 
-it only needs to 'see' this little tiny image on your screen - the Share to Chat button, 
+it only needs to 'see' this little tiny image on your screen - the 'Share to Chat' button, 
 
 <img src="/resources/ShareToChat_placement.png" width="850" alt="qng_stc">
 
-...which means the app works in **ANY** interface language, 
+...which means the app works in **ANY** interface language,
+
 for every game mode
+
 AND in every screen resolution. 
 
 
 # What's in the Package
 
-- [x] an AutoHotkey file (.ahk), 
-- [x] a tray icon (.ico),
-- [x] ShareToChat.jpg (.jpg) image for the 1920x1080 resolution
+- [x] an AutoHotkey file (.ahk) ---> Dota 2 Queue-n-Go.ahk, 
+- [x] a tray icon (.ico) ---> icon.ico,
+- [x] reference Image (.jpg) ---> ShareToChat.jpg for the 1920x1080 resolution
 
-# (!) IMPORTANT: 
+# (!) IMPORTANT:
 
-If you use a different resolution just retake the image easily with 'PrintScreen', then crop it in 'Paint' and it will work for your configuration.
+(!) MAKE SURE your 'ShareToChat.jpg' image IS THE SAME IMAGE as in your in-game lobby!
+
+If you use a different resolution - just retake the image with 'PrintScreen', then crop it in 'Paint' and it will work for your configuration.
 
 
 # How to Use
 
+<img src="/resources/qng_foreground.png" width="850" alt="qng_foreground">
+
 - Enable "Bring Dota to foreground on match found" in Options -> Advanced.
 - Enable "Bring Dota to foreground for ready checks" in Options -> Advanced.
 - Enable "Bring Dota to foreground for pick phase and game start" in Options -> Advanced.
-
-<img src="/resources/qng_foreground.png" width="850" alt="qng_foreground">
-
 - (!) MAKE SURE your 'ShareToChat.jpg' image IS THE SAME IMAGE as in your in-game lobby!
-
 - Press [ALT + N] to activate the script.
 You can change the hotkey using any text editor like Notepad.
 
 <img src="/resources/qng_notepad.png" width="850" alt="qng_notepad">
 
 
-# How it works
+# How it actually works
 
 <img src="/resources/qng_logic.png" width="850" alt="qng_logic">
 
