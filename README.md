@@ -1,7 +1,5 @@
 # Dota 2 Queue-And-Go
 
-<img src="/icon.ico" width="150" alt="qng_icon">
-
 <img src="/resources/qng_hero2.png" width="850" alt="qng_hero">
 
 # (!) IMPORTANT AND REQUIRED:
@@ -22,40 +20,27 @@ If you use a different resolution - just retake the image with 'PrintScreen', th
 
 Once upon a time there was a Dota 2 player who enjoyed the game. He really wanted to play multiple games in row, but he had a problem.
 
-He ALSO wanted a fresh cup of coffee (and a bio break).
+He ALSO wanted a fresh cup of coffee and a bathroom break.
 
 But waiting several minutes for the queue to pop, only for someone not to accept the 'Your Game is Ready'... is annoying.
 
-Doing this all over again only to get back into the queue because of the players "has not connected"...
+Doing this all over again only to get back into the queue because one of the players "has failed to connect"...
 
-Yeah.
-
-He really wanted his coffee.
+He really wanted his coffee!
 
 
 ## Quick Summary
 
-**Dota 2 Queue-And-Go** helps players to successully queue and end up at the pick phase successfully, without macro spamming the client.
+<img src="/icon.ico" width="100" alt="qng_icon">
 
-**Dota 2 Queue-And-Go** automatically accepts '*Ready check*' pop-ups, '*Game is Ready*' pop-ups and *deactivates itself* after everyone has connected.
+**Dota 2 Queue-And-Go** helps players to ALWAYS end up at the pick phase successfully, without macro spamming the client.
 
-It understands where your "Play Dota" button is, and it understands when to deactivate itself, so the ONLY user input is to launch.
+**Dota 2 Queue-And-Go** automatically accepts '*Ready check*' pop-ups, '*Game is Ready*' pop-ups, stays in the queue if someone didn't accept or hasn't connected and *deactivates itself* after everyone has connected.
 
-
-The best thing: 
-
-it only needs to 'see' this little tiny image on your screen - the '**Share to Chat**' button, 
-
-<img src="/resources/ShareToChat_placement1.png" width="850" alt="qng_stc">
-
-...which means the app works in **ANY** interface language,
-
-for every game mode
-
-AND in every screen resolution. 
+While is does require a 1 minute setup, it works in any language, game mode and window resolution.
 
 
-# What's in the Package
+## What's in the Package
 
 | File Name              	| Extension 		| Purpose |
 | :---------------- 		| :------: 			| :---- |
@@ -65,7 +50,7 @@ AND in every screen resolution.
 | icon           			|   .ico   			| Tray icon |
 
 
-# How to Use
+## How to Use
 
 <img src="/resources/qng_foreground.png" width="491" alt="qng_foreground">
 
@@ -79,7 +64,7 @@ You can change the hotkey using any text editor.
 <img src="/resources/qng_hotkeysini.png" width="350" alt="qng_hotkeysini">
 
 
-# How it actually works
+## How it actually works
 
 <img src="/resources/qng_logic1.png" width="850" alt="qng_logic">
 
