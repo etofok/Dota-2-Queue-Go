@@ -68,32 +68,32 @@ You can change the hotkey using any text editor.
 
 <img src="/resources/qng_logic1.png" width="850" alt="qng_logic">
 
-* The script locates the Play Dota button, which is consistently positioned approximately 5% from the right edge of the window and at a similar height to the ShareToChat.png image.
+The script locates the Play Dota button, which is consistently positioned approximately 5% from the right edge of the window and at a similar height to the ShareToChat.png image.
 
-* The script queues for the game and minimizes the Dota 2 window.
-
-
-* When the game is ready Dota 2 will be brought to the front as specified in the options
+The script queues for the game and minimizes the Dota 2 window.
 
 
-* The script then presses Enter once, assuming there's a button to be pressed since the Dota 2 window becomes active.
+When the game is ready Dota 2 will be brought to the front as specified in the options
 
 
-* After pressing Enter, the script minimizes Dota 2 again.
+The script then presses Enter once, assuming there's a button to be pressed since the Dota 2 window becomes active.
 
 
-* After a short delay, Dota 2 will be brought forward again under the following conditions:
-
-a) A new 'Game is Ready' pop-up appears due to someone failing to accept the game previously.
-
-b) Everyone has successfully accepted the game and is loading into the pick phase.
+After pressing Enter, the script minimizes Dota 2 again.
 
 
-* Last but not least, the script scans for the ShareToChat.png image every second for the next 27 seconds.
+After a short delay, Dota 2 will be brought forward again under the following conditions:
 
-a) If the ShareToChat.png image IS NOT detected again, everyone has successfully connected.
+- a) A new 'Game is Ready' pop-up appears due to someone failing to accept the game previously.
 
-b) If the ShareToChat.png image IS detected again, someone failed to connect, indicating a return to the main lobby screen and queuing for another game, prompting the script to minimize the Dota 2 window and wait for another game pop-up.
+- b) Everyone has successfully accepted the game and is loading into the pick phase.
+
+
+Last but not least, the script scans for the ShareToChat.png image every second for the next 27 seconds.
+
+- a) If the ShareToChat.png image IS NOT detected again, everyone has successfully connected.
+
+- b) If the ShareToChat.png image IS detected again, someone failed to connect, indicating a return to the main lobby screen and queuing for another game, prompting the script to minimize the Dota 2 window and wait for another game pop-up.
 
 
 It was fun to make it.
