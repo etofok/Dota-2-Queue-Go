@@ -9,7 +9,9 @@ Download here: https://www.autohotkey.com/
 
 **(!) MAKE SURE your 'ShareToChat.png' image IS THE SAME IMAGE as in your in-game lobby!**
 
-If you use a different resolution - just retake the image with 'PrintScreen', then crop it in 'Paint'.
+If you use a different resolution - just retake the image.
+(Screenshot with the 'PrintScreen' keyboard button, then crop it in 'Paint'.)
+(ShareX and alike apps work as well)
 
 [**Download Button Click Here**](https://github.com/etofok/Dota-2-Queue-and-Go/releases/tag/v1.1)
 
@@ -58,6 +60,9 @@ While is does require a 1 minute setup, it works in any language, game mode and 
 - Enable "Bring Dota to foreground for ready checks" in Options -> Advanced.
 - Enable "Bring Dota to foreground for pick phase and game start" in Options -> Advanced.
 - **(!) MAKE SURE your 'ShareToChat.png' image IS THE SAME IMAGE as in your in-game lobby!**
+If you use a different resolution - just retake the image.
+(Screenshot with the 'PrintScreen' keyboard button, then crop it in 'Paint'.)
+(ShareX and alike apps work as well)
 - Press [ALT + N] to activate the script.
 You can change the hotkey using any text editor.
 
