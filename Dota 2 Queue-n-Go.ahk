@@ -1,25 +1,9 @@
 ;-----------------------------------------
-; ----- H O T K E Y S -----
-;-----------------------------------------
-
-; ^ - CTRL
-; + - SHIFT
-; ! - ALT
-; # - WIN
-
-Hotkey_QueueAndGo			= !n 		; <--------------
-
-Hotkey_ScriptReload 		= !m		; <--------------
-Hotkey_ScriptFolder			= 
-Hotkey_ScriptEdit 			= 
-Hotkey_ScriptExit 			= 
-
-;-----------------------------------------
 
 #SingleInstance force
 #NoEnv
 #Persistent
-#MaxHotkeysPerInterval, 500
+#MaxThreadsPerHotkey 1
 
 SetWorkingDir %A_ScriptDir%
 SetTitleMatchMode, 3
@@ -27,7 +11,7 @@ SetTitleMatchMode, 3
 if not A_IsAdmin
 	Run *RunAs "%A_ScriptFullPath%"
 
-currentVersion 						:= 	"Dota 2 Queue-and-Go v1.0.0"
+currentVersion 						:= 	"Dota 2 Queue-and-Go!"
 Global i_ShareToChat 				:= 	"ShareToChat.png"
 icon_Main 							= 	icon.ico
 
@@ -35,29 +19,17 @@ icon_Main 							= 	icon.ico
 ; ----- H O T K E Y S -----
 ;-----------------------------------------
 
-; ^ - CTRL
-; + - SHIFT
-; ! - ALT
-; # - WIN
+IniRead, Hotkey_QueueAndGo, 		hotkeys.ini, Hotkeys, Hotkey_QueueAndGo
+IniRead, Hotkey_ScriptReload, 		hotkeys.ini, Hotkeys, Hotkey_ScriptReload
+IniRead, Hotkey_ScriptHotkeys, 		hotkeys.ini, Hotkeys, Hotkey_ScriptHotkeys
 
-Hotkey_QueueAndGo										= !n 		; <--------------
-
-Hotkey_ScriptReload 									= !m		; <--------------
-Hotkey_ScriptFolder										= 
-Hotkey_ScriptEdit 										= 
-Hotkey_ScriptExit 										= 
-
-Hotkey, %Hotkey_QueueAndGo%, 	QueueAndGo,				UseErrorLevel	
-Hotkey, %Hotkey_ScriptReload%, 	ScriptReload,			UseErrorLevel	
-Hotkey, %Hotkey_ScriptFolder%, 	ScriptFolder,			UseErrorLevel	
-Hotkey, %Hotkey_ScriptEdit%, 	ScriptEdit,				UseErrorLevel	
-Hotkey, %Hotkey_ScriptExit%, 	ScriptExit,				UseErrorLevel	
+Hotkey, %Hotkey_QueueAndGo%, 		QueueAndGo, 			UseErrorLevel
+Hotkey, %Hotkey_ScriptReload%,		ScriptReload, 			UseErrorLevel
+Hotkey, %Hotkey_ScriptHotkeys%,		ScriptHotkeys, 			UseErrorLevel
 
 Tooltip_Hotkey_QueueAndGo 		:= ReplaceModifiers(Hotkey_QueueAndGo)
 Tooltip_Hotkey_ScriptReload 	:= ReplaceModifiers(Hotkey_ScriptReload)
-Tooltip_Hotkey_ScriptFolder 	:= ReplaceModifiers(Hotkey_ScriptFolder)
-Tooltip_Hotkey_ScriptEdit 		:= ReplaceModifiers(Hotkey_ScriptEdit)
-Tooltip_Hotkey_ScriptExit 		:= ReplaceModifiers(Hotkey_ScriptExit)
+Tooltip_Hotkey_ScriptHotkeys 	:= ReplaceModifiers(Hotkey_ScriptHotkeys)
 
 
 Menu, Tray, NoStandard
@@ -68,15 +40,16 @@ Menu, Tray, Disable, 	 	%currentVersion%
 
 Menu, Tray, Insert, 2&,		etofok Link Tree >>,									LinkTree
 Menu, Tray, Insert,	3&,
-Menu, Tray, Insert,	4&,		'Queue-And-Go' <%Tooltip_Hotkey_QueueAndGo%>,			QueueAndGo
-Menu, Tray, Insert,	5&,
-Menu, Tray, Insert, 6&, 	 Reload Script <%Tooltip_Hotkey_ScriptReload%>,			ScriptReload
-Menu, Tray, Insert, 7&, 	 Open Folder <%Tooltip_Hotkey_ScriptFolder%>, 			ScriptFolder
-Menu, Tray, Insert, 8&, 	 Edit Script <%Tooltip_Hotkey_ScriptEdit%>, 			ScriptEdit
-Menu, Tray, Insert, 9&, 	 Exit Script <%Tooltip_Hotkey_ScriptExit%>, 			ScriptExit
+Menu, Tray, Insert,	4&,		Run 'Queue-And-Go'`t[%Tooltip_Hotkey_QueueAndGo%],		QueueAndGo
+Menu, Tray, Insert, 5&, 	Reload / Stop`t[%Tooltip_Hotkey_ScriptReload%],			ScriptReload
+Menu, Tray, Insert,	6&,
+Menu, Tray, Insert, 7&, 	Change Hotkeys,											ScriptHotkeys
+Menu, Tray, Insert, 8&, 	Open Folder, 											ScriptFolder
+Menu, Tray, Insert, 9&, 	Open Github, 											ScriptGithub
+Menu, Tray, Insert, 10&, 	Exit Script, 											ScriptExit
 
 Menu, Tray, Icon, %icon_Main%,, 1
-Menu, Tray, Tip, Dota 2 Queue-and-Go by etofok
+Menu, Tray, Tip, %currentVersion%
 
 
 gui_Width		:= 240
@@ -97,9 +70,9 @@ WinSet, TransColor, %color% 220, % GUI_DotaQueueAndGo 	; PNG transparency. 0 = f
 WinSet, ExStyle, +0x20, % GUI_DotaQueueAndGo			; Click-through
 
 
-displaySplash := "Dota 2 Queue-and-Go by etofok`n`nStart Hotkey: " . Tooltip_Hotkey_QueueAndGo . "`n`nReload Hotkey: " . Tooltip_Hotkey_ScriptReload
-SplashTextOn, 250, 120, , %displaySplash%
-Sleep, 3000
+displaySplash := currentVersion
+SplashTextOn, 250, 50, , %displaySplash%
+Sleep, 1000
 SplashTextOff
 
 Return 
@@ -109,6 +82,8 @@ Return
 
 
 QueueAndGo:
+
+	SplashTextOff
 
 	weAreInGame 	:= 0
 	allConnected 	:= 0
@@ -270,7 +245,6 @@ QueueAndGo:
 	
 	UpdateGUI("Good Luck!")
 	Sleep 2000
-
 	Gui, GUI_DotaQueueAndGo:Hide
 
 return
@@ -296,11 +270,27 @@ LinkTree:
 return
 
 ;--------------------------------
+; Hotkeys.ini
+;--------------------------------
+
+ScriptHotkeys:
+	Run, %a_scriptdir%/hotkeys.ini
+return
+
+;--------------------------------
 ; Locate This Script
 ;--------------------------------
 
 ScriptFolder:
 	Run, %a_scriptdir%
+return
+
+;--------------------------------
+; Open on Github
+;--------------------------------
+
+ScriptGithub:
+	Run, https://github.com/etofok/Dota-2-Queue-and-Go?tab=readme-ov-file#how-to-use
 return
 
 ;--------------------------------

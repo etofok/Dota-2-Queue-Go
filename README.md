@@ -16,7 +16,8 @@ If you use a different resolution - just retake the image with 'PrintScreen', th
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K1DI5PY)
 
-## Quick Summary
+
+## The Story
 
 Once upon a time there was a Dota 2 player who enjoyed the game. He really wanted to play multiple games in row, but he had a problem.
 
@@ -30,6 +31,8 @@ Yeah.
 
 He really wanted his coffee.
 
+
+## Quick Summary
 
 **Dota 2 Queue-And-Go** helps players to successully queue and end up at the pick phase successfully, without macro spamming the client.
 
@@ -53,9 +56,12 @@ AND in every screen resolution.
 
 # What's in the Package
 
-- [x] an AutoHotkey file (.ahk) ---> Dota 2 Queue-n-Go.ahk, 
-- [x] a tray icon (.ico) ---> icon.ico,
-- [x] reference Image (.png) ---> ShareToChat.png for the 1920x1080 resolution
+| File Name              	| Extension 		| Purpose |
+| :---------------- 		| :------: 			| :---- |
+| Dota 2 Queue-n-Go        	|   .ahk   			| The Script itself |
+| ShareToChat 				|  .png   			| Target Image for 1920x1080  |
+| hotkeys    				|  .ini   			| Hotkeys file |
+| icon           			|   .ico   			| Tray icon |
 
 
 # How to Use
@@ -67,9 +73,9 @@ AND in every screen resolution.
 - Enable "Bring Dota to foreground for pick phase and game start" in Options -> Advanced.
 - (!) MAKE SURE your 'ShareToChat.png' image IS THE SAME IMAGE as in your in-game lobby!
 - Press [ALT + N] to activate the script.
-You can change the hotkey using any text editor like Notepad.
+You can change the hotkey using any text editor.
 
-<img src="/resources/qng_notepad.png" width="850" alt="qng_notepad">
+<img src="/resources/qng_hotkeys.png" width="850" alt="qng_hotkeys">
 
 
 # How it actually works
