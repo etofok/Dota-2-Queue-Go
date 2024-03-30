@@ -61,7 +61,7 @@ While is does require a 1 minute setup, it works in any language, game mode and 
 - Press [ALT + N] to activate the script.
 You can change the hotkey using any text editor.
 
-<img src="/resources/qng_hotkeysini.png" width="350" alt="qng_hotkeysini">
+<img src="/resources/qng_hotkeys.png" width="350" alt="qng_hotkeys">
 
 
 ## How it actually works
