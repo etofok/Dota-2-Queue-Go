@@ -2,6 +2,7 @@
 
 <img src="/icon.ico" width="150" alt="qng_icon">
 
+<img src="/resources/qng_hero2.png" width="850" alt="qng_hero">
 
 # (!) IMPORTANT AND REQUIRED:
 
@@ -45,7 +46,7 @@ The best thing:
 
 it only needs to 'see' this little tiny image on your screen - the '**Share to Chat**' button, 
 
-<img src="/resources/ShareToChat_placement.png" width="850" alt="qng_stc">
+<img src="/resources/ShareToChat_placement1.png" width="850" alt="qng_stc">
 
 ...which means the app works in **ANY** interface language,
 
@@ -75,12 +76,12 @@ AND in every screen resolution.
 - Press [ALT + N] to activate the script.
 You can change the hotkey using any text editor.
 
-<img src="/resources/qng_hotkeys.png" width="350" alt="qng_hotkeys">
+<img src="/resources/qng_hotkeysini.png" width="350" alt="qng_hotkeysini">
 
 
 # How it actually works
 
-<img src="/resources/qng_logic.png" width="850" alt="qng_logic">
+<img src="/resources/qng_logic1.png" width="850" alt="qng_logic">
 
 * The script locates the Play Dota button, which is consistently positioned approximately 5% from the right edge of the window and at a similar height to the ShareToChat.png image.
 
