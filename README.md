@@ -66,7 +66,7 @@ AND in every screen resolution.
 
 # How to Use
 
-<img src="/resources/qng_foreground.png" width="850" alt="qng_foreground">
+<img src="/resources/qng_foreground.png" width="491" alt="qng_foreground">
 
 - Enable "Bring Dota to foreground on match found" in Options -> Advanced.
 - Enable "Bring Dota to foreground for ready checks" in Options -> Advanced.
@@ -75,7 +75,7 @@ AND in every screen resolution.
 - Press [ALT + N] to activate the script.
 You can change the hotkey using any text editor.
 
-<img src="/resources/qng_hotkeys.png" width="850" alt="qng_hotkeys">
+<img src="/resources/qng_hotkeys.png" width="350" alt="qng_hotkeys">
 
 
 # How it actually works
