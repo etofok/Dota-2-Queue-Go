@@ -39,7 +39,7 @@ He really wanted his coffee!
 
 **Dota 2 Queue-And-Go** helps players to ALWAYS end up at the pick phase successfully, without macro spamming the client.
 
-**Dota 2 Queue-And-Go** automatically accepts '*Ready check*' pop-ups, '*Game is Ready*' pop-ups, stays in the queue if someone didn't accept or hasn't connected and *deactivates itself* after everyone has connected.
+**Dota 2 Queue-And-Go** accepts '*Ready check*' pop-ups, '*Game is Ready*' pop-ups, stays in the queue if someone didn't accept or failed to connect and *deactivates itself* automatically.
 
 While is does require a 1 minute setup, it works in any language, game mode and window resolution.
 
