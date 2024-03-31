@@ -15,7 +15,7 @@ Download here: https://www.autohotkey.com/
 
 - ShareX and alike apps work as well
 
-[**Download Button Click Here**](https://github.com/etofok/Dota-2-Queue-and-Go/releases/tag/v1.1)
+[**Download Dota 2 Queue-And-Go Button Click Here**](https://github.com/etofok/Dota-2-Queue-and-Go/releases/tag/v1.1)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K1DI5PY)
 
@@ -47,7 +47,7 @@ While is does require a 1 minute setup, it works in any language, game mode and 
 ## What's in the Package
 
 | File Name              	| Extension 		| Purpose |
-| :---------------- 		| :------: 			| :---- |
+| :---------------- 		| :------ 			| :---- |
 | Dota 2 Queue-n-Go        	|   .ahk   			| The Script itself |
 | ShareToChat 				|  .png   			| Target Image for 1920x1080  |
 | hotkeys    				|  .ini   			| Hotkeys file |
@@ -83,7 +83,7 @@ While is does require a 1 minute setup, it works in any language, game mode and 
 <img src="/resources/qng_hotkeys.png" width="350" alt="qng_hotkeys">
 
 
-## How it actually works
+## How it actually works (in detail)
 
 <img src="/resources/qng_logic1.png" width="850" alt="qng_logic">
 
@@ -92,27 +92,28 @@ The script locates the Play Dota button, which is consistently positioned approx
 The script queues for the game and minimizes the Dota 2 window.
 
 
-When the game is ready Dota 2 will be brought to the front as specified in the options
+When the game is ready Dota 2 will be brought to the front as specified in the options.
 
 
-The script then presses Enter once, assuming there's a button to be pressed since the Dota 2 window becomes active.
+The script will then press Enter once, assuming there's a button to be pressed.
 
 
 After pressing Enter, the script minimizes Dota 2 again.
 
 
-After a short delay, Dota 2 will be brought forward again under the following conditions:
+After a short delay, Dota 2 will be brought forward again because...:
 
-- a) A new 'Game is Ready' pop-up appears due to someone failing to accept the game previously.
+- a) A new 'Game is Ready' pop-up appeared because someone failed to accept the 'Game is Ready' the previous time.
 
-- b) Everyone has successfully accepted the game and is loading into the pick phase.
+- b) Everyone has successfully accepted the game and we're loading into the pick phase.
 
 
-Last but not least, the script scans for the ShareToChat.png image every second for the next 27 seconds.
+Last but not least, the script will then scan for the 'ShareToChat.png' image every second for the next 27 seconds. Why?
 
-- a) If the ShareToChat.png image IS NOT detected again, everyone has successfully connected.
+- a) If the 'ShareToChat.png' image IS detected AGAIN, that means we are thrown back to the main lobby! This can only happen when someone has failed to connect!
+  All players are placed back in the queue. Therefore the script minimizes the Dota 2 window to wait for yet another game pop-up. It's a loop.
 
-- b) If the ShareToChat.png image IS detected again, someone failed to connect, indicating a return to the main lobby screen and queuing for another game, prompting the script to minimize the Dota 2 window and wait for another game pop-up.
+- b) If the 'ShareToChat.png' image IS NOT detected again, that means everyone has successfully connected. User are free to deactivate the script manually, but it will deactivate itself in 27 seconds.
 
 
 It was fun to make it.
