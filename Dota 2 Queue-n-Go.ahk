@@ -31,25 +31,42 @@ Tooltip_Hotkey_QueueAndGo 		:= ReplaceModifiers(Hotkey_QueueAndGo)
 Tooltip_Hotkey_ScriptReload 	:= ReplaceModifiers(Hotkey_ScriptReload)
 Tooltip_Hotkey_ScriptHotkeys 	:= ReplaceModifiers(Hotkey_ScriptHotkeys)
 
-
 Menu, Tray, NoStandard
 
-Menu, Tray, Insert, 1&, 	%currentVersion%,										menublank
-Menu, Tray, Default, 	 	%currentVersion%
-Menu, Tray, Disable, 	 	%currentVersion%
+Menu, Tray, Add, 			%currentVersion%,										menublank
+Menu, Tray, Default,		%currentVersion%
+Menu, Tray, Disable,		%currentVersion%
 
-Menu, Tray, Insert, 2&,		etofok Link Tree >>,									LinkTree
-Menu, Tray, Insert,	3&,
-Menu, Tray, Insert,	4&,		Run 'Queue-And-Go'`t[%Tooltip_Hotkey_QueueAndGo%],		QueueAndGo
-Menu, Tray, Insert, 5&, 	Reload / Stop`t[%Tooltip_Hotkey_ScriptReload%],			ScriptReload
-Menu, Tray, Insert,	6&,
-Menu, Tray, Insert, 7&, 	Change Hotkeys,											ScriptHotkeys
-Menu, Tray, Insert, 8&, 	Open Folder, 											ScriptFolder
-Menu, Tray, Insert, 9&, 	Open Github, 											ScriptGithub
-Menu, Tray, Insert, 10&, 	Exit Script, 											ScriptExit
+Menu, Tray, Add,			etofok Link Tree >>,									LinkTree
+Menu, Tray, Add,
+Menu, Tray, Add,			Run 'Queue-And-Go'`t[%Tooltip_Hotkey_QueueAndGo%],		QueueAndGo
+Menu, Tray, Add, 			Reload / Stop`t[%Tooltip_Hotkey_ScriptReload%],			ScriptReload
+Menu, Tray, Add,
+Menu, Tray, Add, 			Change Hotkeys,											ScriptHotkeys
+Menu, Tray, Add, 			Open Folder, 											ScriptFolder
+Menu, Tray, Add, 			Open Github, 											ScriptGithub
+Menu, Tray, Add, 			Exit Script, 											ScriptExit
 
-Menu, Tray, Icon, %icon_Main%,, 1
-Menu, Tray, Tip, %currentVersion%
+Menu, Tray, Icon, 			%icon_Main%,, 1
+Menu, Tray, Tip, 			%currentVersion%
+
+
+; ---
+; Optional Add/Remove Launch Dota 2 to the app
+; Add/Remove a hotkey in hotkeys.ini
+; ---
+
+IniRead, Hotkey_LaunchDota2, 		hotkeys.ini, Hotkeys, Hotkey_LaunchDota2
+
+if (Hotkey_LaunchDota2) {
+
+	Hotkey, %Hotkey_LaunchDota2%,	LaunchDota2, 			UseErrorLevel
+
+	Tooltip_Hotkey_LaunchDota2 		:= ReplaceModifiers(Hotkey_LaunchDota2)
+
+	Menu, Tray, Insert, 3&
+	Menu, Tray, Insert, 4&,	Launch Dota 2`t[%Tooltip_Hotkey_LaunchDota2%],			LaunchDota2
+}
 
 
 gui_Width		:= 240
@@ -260,6 +277,14 @@ UpdateGUI(message) {
 
 	GuiControl, GUI_DotaQueueAndGo:, Alert1, % pAlert1
 }
+
+;--------------------------------
+; LaunchDota2
+;--------------------------------
+
+LaunchDota2:
+	Run, steam://rungameid/570
+return
 
 ;--------------------------------
 ; LinkTree
