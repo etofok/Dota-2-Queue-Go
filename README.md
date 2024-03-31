@@ -54,9 +54,12 @@ While is does require a 1 minute setup, it works in any language, game mode and 
 | icon           			|   .ico   			| Tray icon |
 
 
+
 ## How to Use
 
-<img src="/resources/qng_foreground.png" width="491" alt="qng_foreground">
+<p float="middle">
+  <img src="/resources/qng_foreground.png" width="491" alt="qng_foreground">
+</p>
 
 1. Enable "Bring Dota to foreground on match found" in Options -> Advanced.
   
@@ -80,7 +83,26 @@ While is does require a 1 minute setup, it works in any language, game mode and 
 
 - Hotkeys are stored in the hotkeys.ini 
 
-<img src="/resources/qng_hotkeys.png" width="350" alt="qng_hotkeys">
+<p float="middle">
+  <img src="/resources/qng_hotkeys.png" width="350" alt="qng_hotkeys">
+</p>
+
+
+
+
+## You can also add (remove) 'Launch Dota 2' option
+
+<p float="middle">
+  <img src="/resources/option A.png" width="321" />
+  <img src="/resources/option B.png" width="321" /> 
+</p>
+
+See hotkeys.ini for details
+
+<p float="middle">
+  <img src="/resources/LaunchDota2Setup.png" width="491" alt="qng_foreground">
+</p>
+
 
 
 ## How it actually works (in detail)
