@@ -15,7 +15,7 @@ Download here: https://www.autohotkey.com/
 
 - ShareX and alike apps work as well
 
-[**Download Dota 2 Queue-And-Go Button Click Here**](https://github.com/etofok/Dota-2-Queue-and-Go/releases/tag/v1.1)
+[**Download Dota 2 Queue-And-Go Button Click Here**](https://github.com/etofok/Dota-2-Queue-and-Go/archive/refs/heads/main.zip)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K1DI5PY)
 
