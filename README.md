@@ -4,8 +4,8 @@
 
 # (!) IMPORTANT AND REQUIRED:
 
-(!) Requires [AutoHotkey v1.1](https://www.autohotkey.com/) (not v2.0). 
-[Download here](https://www.autohotkey.com/): https://www.autohotkey.com/
+(!) Requires AutoHotkey v1.1 (not v2.0). 
+Download here: https://www.autohotkey.com/
 
 **(!) MAKE SURE your 'ShareToChat.png' image IS THE SAME IMAGE as in your in-game lobby!**
 
