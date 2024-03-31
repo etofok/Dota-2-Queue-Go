@@ -92,9 +92,10 @@ While is does require a 1 minute setup, it works in any language, game mode and 
 
 ## You can also add (remove) 'Launch Dota 2' option
 
-<p float="middle">
-  <img src="/resources/option A.png" width="321" />
-  <img src="/resources/option B.png" width="321" /> 
+<p align="center">
+  <img alt="A" src="./resources/option A.png" width="45%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="B" src="/resources/option B.png" width="45%">
 </p>
 
 See hotkeys.ini for details
