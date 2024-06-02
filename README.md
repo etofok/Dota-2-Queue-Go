@@ -17,7 +17,7 @@ Download here: https://www.autohotkey.com/
 
 [**Download Dota 2 Queue-And-Go Button Click Here**](https://github.com/etofok/Dota-2-Queue-and-Go/archive/refs/heads/main.zip)
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K1DI5PY)
+[**etofok LinkTree >>**](https://linktr.ee/etofok)
 
 
 ## The Story
