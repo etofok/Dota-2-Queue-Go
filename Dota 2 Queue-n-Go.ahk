@@ -34,12 +34,12 @@ Tooltip_Hotkey_ScriptHotkeys 	:= ReplaceModifiers(Hotkey_ScriptHotkeys)
 Menu, Tray, NoStandard
 
 Menu, Tray, Add, 			%currentVersion%,										menublank
-Menu, Tray, Default,		%currentVersion%
 Menu, Tray, Disable,		%currentVersion%
 
 Menu, Tray, Add,			etofok Link Tree >>,									LinkTree
 Menu, Tray, Add,
 Menu, Tray, Add,			Run 'Queue-And-Go'`t[%Tooltip_Hotkey_QueueAndGo%],		QueueAndGo
+Menu, Tray, Default,		Run 'Queue-And-Go'`t[%Tooltip_Hotkey_QueueAndGo%]
 Menu, Tray, Add, 			Reload / Stop`t[%Tooltip_Hotkey_ScriptReload%],			ScriptReload
 Menu, Tray, Add,
 Menu, Tray, Add, 			Change Hotkeys,											ScriptHotkeys
